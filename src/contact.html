@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Segoe UI", "Microsoft YaHei", sans-serif;
+            background: #f0f2f5;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .main-content {
+            flex: 1;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background: #fff;
+            padding: 20px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #e0e0e0;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 16px;
+            border: 1px solid #d0d0d0;
+            background: #fff;
+            border-radius: 0;
+            cursor: pointer;
+            font-size: 14px;
+            color: #1a1a1a;
+            transition: all 0.15s;
+        }
+        .btn:hover {
+            background: #f5f5f5;
+        }
+        .btn-primary {
+            background: #0078d4;
+            color: #fff;
+            border-color: #0078d4;
+        }
+        .btn-primary:hover {
+            background: #106ebe;
+        }
+        .card {
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            margin-bottom: 16px;
+        }
+        .card-header {
+            padding: 16px 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .card-header h2 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+        .card-body {
+            padding: 20px;
+        }
+        .card-body p {
+            color: #333;
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 12px;
+            text-align: justify;
+        }
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            padding: 16px;
+            background: #f9f9f9;
+            border: 1px solid #e0e0e0;
+            margin-bottom: 16px;
+            transition: all 0.2s;
+        }
+        .contact-item:hover {
+            background: #f0f0f0;
+            border-color: #0078d4;
+        }
+        .contact-item:last-child {
+            margin-bottom: 0;
+        }
+        .contact-icon {
+            width: 48px;
+            height: 48px;
+            background: #0078d4;
+            border-radius: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .contact-icon.weixin {
+            background: #07c160;
+        }
+        .contact-icon.qq {
+            background: #12b7f5;
+        }
+        .contact-icon.phone {
+            background: #0078d4;
+        }
+        .contact-icon.workorder {
+            background: #ff9800;
+        }
+        .contact-icon svg {
+            width: 24px;
+            height: 24px;
+            color: #fff;
+        }
+        .contact-content {
+            flex: 1;
+        }
+        .contact-content h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+        }
+        .contact-content p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 12px;
+            line-height: 1.6;
+        }
+        .contact-content .btn {
+            margin-right: 8px;
+        }
+        .footer {
+            text-align: center;
+            padding: 16px 20px;
+            background: #fff;
+            border-top: 1px solid #e0e0e0;
+            margin-top: 20px;
+            font-size: 13px;
+            color: #666;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .footer-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .btn-sm {
+            padding: 2px 6px;
+            font-size: 10px;
+        }
+        .qr-code-container {
+            text-align: center;
+            margin-top: 12px;
+        }
+        .qr-code-container img {
+            max-width: 180px;
+            border: 1px solid #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-content">
+        <div class="container">
+            <div class="header">
+                <h1>有问题？有建议？联系我们</h1>
+                <button class="btn btn-sm" onclick="if(window.history.length > 1) { window.history.back(); } else { window.close(); }">
+                    <i data-lucide="arrow-left" style="width:14px;height:14px;"></i>
+                    返回
+                </button>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h2>联系方式</h2>
+                </div>
+                <div class="card-body">
+                    <p>如果您在使用过程中遇到问题或有建议，欢迎通过以下方式联系我们：</p>
+                    
+                    <!-- 微信联系 -->
+                    <div class="contact-item">
+                        <div class="contact-icon weixin">
+                            <i data-lucide="message-circle"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h3>微信联系</h3>
+                            <p>扫描下方二维码添加微信好友，直接与我们沟通</p>
+                            <button class="btn btn-primary" onclick="window.open('weixin.html', '_blank')">
+                                <i data-lucide="external-link" style="width:14px;height:14px;"></i>
+                                查看微信二维码
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- QQ联系 -->
+                    <div class="contact-item">
+                        <div class="contact-icon qq">
+                            <i data-lucide="hash"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h3>QQ联系</h3>
+                            <p>加入QQ群与其他用户交流，或直接联系管理员</p>
+                            <button class="btn btn-primary" onclick="window.open('https://qm.qq.com/q/etryeoVfPi', '_blank')">
+                                <i data-lucide="external-link" style="width:14px;height:14px;"></i>
+                                加入QQ群
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 工单文档 -->
+                    <div class="contact-item">
+                        <div class="contact-icon workorder">
+                            <i data-lucide="file-text"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h3>工单文档</h3>
+                            <p>提交Bug或功能建议，我们会尽快处理并回复</p>
+                            <button class="btn btn-primary" onclick="window.open('https://docs.qq.com/form/page/DUFBobVhFbFVHbGZU', '_blank')">
+                                <i data-lucide="external-link" style="width:14px;height:14px;"></i>
+                                填写工单
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 电话联系 -->
+                    <div class="contact-item">
+                        <div class="contact-icon phone">
+                            <i data-lucide="phone"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h3>电话联系</h3>
+                            <p>工作时间内可直接拨打电话联系我们</p>
+                            <p style="font-size: 16px; font-weight: 600; color: #0078d4; margin-top: 8px;">13710190930</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h2>工作时间</h2>
+                </div>
+                <div class="card-body">
+                    <p><strong>工作日：</strong>周一至周五 21:00 - 23:00</p>
+                    <p><strong>周末及节假日：</strong>不定时服务，将在下一个工作日回复</p>
+                    <p><strong>工单处理时间：</strong>一个工作日内回复</p>
+                    <p><strong>查看问题处理状态：</strong>https://docs.qq.com/sheet/DUHVzcExhaVVsUnJ4?tab=BB08J2</p>
+                    <p style="margin-top: 16px; color: #666; font-size: 13px;">* 我们会在一个工作日内回复您的问题，感谢您的耐心等待</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        ©2026 Copyright S.L Software Power by Hou wen jie
+        <div class="footer-buttons">
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/lucide@0.244.0/dist/umd/lucide.min.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
