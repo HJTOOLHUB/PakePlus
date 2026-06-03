@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>隐私政策</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Segoe UI", "Microsoft YaHei", sans-serif;
+            background: #f0f2f5;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .main-content {
+            flex: 1;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background: #fff;
+            padding: 20px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #e0e0e0;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 16px;
+            border: 1px solid #d0d0d0;
+            background: #fff;
+            border-radius: 0;
+            cursor: pointer;
+            font-size: 14px;
+            color: #1a1a1a;
+            transition: all 0.15s;
+        }
+        .btn:hover {
+            background: #f5f5f5;
+        }
+        .btn-primary {
+            background: #0078d4;
+            color: #fff;
+            border-color: #0078d4;
+        }
+        .btn-primary:hover {
+            background: #106ebe;
+        }
+        .card {
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            margin-bottom: 16px;
+        }
+        .card-header {
+            padding: 16px 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .card-header h2 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+        .card-body {
+            padding: 20px;
+        }
+        .card-body p {
+            color: #333;
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 12px;
+            text-align: justify;
+        }
+        .card-body ul {
+            list-style: none;
+            padding-left: 20px;
+            margin-bottom: 10px;
+        }
+        .card-body li {
+            color: #333;
+            font-size: 14px;
+            line-height: 1.8;
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 8px;
+        }
+        .card-body li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #0078d4;
+        }
+        .highlight-box {
+            background: #fff4ce;
+            border-left: 4px solid #ffc83d;
+            padding: 16px;
+            margin: 16px 0;
+        }
+        .highlight-box p {
+            color: #333;
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+        .footer {
+            text-align: center;
+            padding: 16px 20px;
+            background: #fff;
+            border-top: 1px solid #e0e0e0;
+            margin-top: 20px;
+            font-size: 13px;
+            color: #666;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .footer-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .btn-sm {
+            padding: 2px 6px;
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-content">
+        <div class="container">
+            <div class="header">
+                <h1>祈福英校信息技术练习题系统隐私政策</h1>
+                <button class="btn btn-sm" onclick="if(window.history.length > 1) { window.history.back(); } else { window.close(); }">
+                    <i data-lucide="arrow-left" style="width:14px;height:14px;"></i>
+                    返回
+                </button>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h2>版本说明</h2>
+                </div>
+                <div class="card-body">
+                    <p><strong>版本号：</strong>V1.0</p>
+                    <p><strong>生效日期：</strong>2026年6月3日</p>
+                    <p><strong>重要提示：</strong>本产品仅授权广东省广州市祈福英语实验学校使用，其他机构或个人不得使用本系统！否则将追究法律责任！</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h2>1. 引言</h2>
+                </div>
+                <div class="card-body">
+                    <p>本隐私政策（以下简称"政策"）旨在说明本在线考试系统（以下简称"系统"）如何收集、使用、存储和保护您的个人信息。我们尊重您的隐私，并致力于保护您的个人信息安全。</p>
+                    <p>通过使用本系统，您表示同意我们按照本政策收集和使用您的信息。</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h2>2. 收集的信息类型</h2>
+                </div>
+                <div class="card-body">
+                    <p>我们仅收集实现系统功能所需的必要信息：</p>
+                    <ul>
+                        <li><strong>题库数据：</strong>教师用户创建的题目、选项、答案及解析等教学内容</li>
+                        <li><strong>答题记录：</strong>学生用户的答题答案、得分情况、错题记录等学习数据</li>
+                        <li><strong>本地存储数据：</strong>题库文件、用户偏好设置等（仅存储在用户设备本地）</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h2>3. 信息使用方式</h2>
+                </div>
+                <div class="card-body">
+                    <p>我们收集的信息仅用于以下目的：</p>
+                    <ul>
+                        <li>提供在线考试和学习功能</li>
+                        <li>实现错题重做和答案解析功能</li>
+                        <li>计算和展示考试成绩</li>
+                        <li>优化系统性能和用户体验</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h2>4. 信息保护措施</h2>
+                </div>
+                <div class="card-body">
+                    <p>我们采取多种安全措施保护您的信息：</p>
+                    <ul>
+                        <li><strong>本地存储：</strong>题库数据和答题记录仅存储在用户设备本地，不会上传到服务器</li>
+                        <li><strong>数据加密：</strong>题库文件采用加密存储，防止未授权访问</li>
+                        <li><strong>访问控制：</strong>系统不要求用户注册登录，避免身份信息泄露风险</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h2>5. 信息共享与披露</h2>
+                </div>
+                <div class="card-body">
+                    <p>我们不会向任何第三方共享、出售或披露您的个人信息，除非：</p>
+                    <ul>
+                        <li>根据法律法规要求</li>
+                        <li>为了保护系统安全或他人合法权益</li>
+                        <li>获得您的明确同意</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h2>6. 用户权利</h2>
+                </div>
+                <div class="card-body">
+                    <p>您对自己的信息享有以下权利：</p>
+                    <ul>
+                        <li><strong>访问权：</strong>您可以随时查看自己的答题记录和学习数据</li>
+                        <li><strong>删除权：</strong>您可以随时删除本地存储的题库文件和答题记录</li>
+                        <li><strong>控制权：</strong>您可以选择是否使用某些功能</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h2>7. 政策更新</h2>
+                </div>
+                <div class="card-body">
+                    <p>我们可能会不定期更新本政策。更新后的政策将在系统中发布，您可以随时查看最新版本。</p>
+                    <p>如果政策发生重大变更，我们会通过适当方式通知您。</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h2>8. 免责声明</h2>
+                </div>
+                <div class="card-body">
+                    <p>尽管我们采取了安全措施，但互联网传输和本地存储都无法保证100%的安全性。我们不对因不可抗力或第三方攻击导致的数据损失承担责任。</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h2>9. 联系方式</h2>
+                </div>
+                <div class="card-body">
+                    <p>如果您对本隐私政策有任何疑问或建议，请通过以下方式联系我们：</p>
+                    <p><strong>邮箱/qq：</strong>3301976275@qq.com</p>
+                    <p><strong>电话：</strong>13710190930</p>
+                    <p><strong>微信：</strong>Hou776836</p>
+                </div>
+            </div>
+
+            <div class="highlight-box">
+                <p><strong>重要提示：</strong>本产品仅授权广东省广州市祈福英语实验学校使用，其他机构或个人不得使用本系统！否则将追究法律责任！</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        ©2026 Copyright S.L Software Power by Hou wen jie
+        <div class="footer-buttons">
+            <button class="btn btn-sm" onclick="window.open('contact.html', '_blank')">
+                <i data-lucide="phone" style="width:14px;height:14px;"></i>
+                联系我们
+            </button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/lucide@0.244.0/dist/umd/lucide.min.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
